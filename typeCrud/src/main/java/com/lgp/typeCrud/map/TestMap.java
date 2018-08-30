@@ -49,14 +49,14 @@ public class TestMap {
 
         t1 = System.currentTimeMillis();
         for (int i = 0; i < max; i++) {
-            map.get(i);
+            map.get(""+i);
         }
         t2 = System.currentTimeMillis() - t1;
         System.out.println(name + " 取出" + max + "个,时间" + t2 + "毫秒");
 
         t1 = System.currentTimeMillis();
         for (int i = 0; i < max; i++) {
-            map.remove(i);
+            map.remove(""+i);
         }
         t2 = System.currentTimeMillis() - t1;
         System.out.println(name + " 删除" + max + "个,时间" + t2 + "毫秒");
